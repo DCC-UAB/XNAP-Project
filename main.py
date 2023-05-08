@@ -38,7 +38,6 @@ def model_pipeline(cfg:dict) -> None:
 
       # make the model, data, and optimization problem
       model, train_loader, test_loader, criterion, optimizer = make(config)
-      print(model)
 
       # and use them to train the model
       train(model, train_loader, criterion, optimizer, config)

@@ -5,7 +5,7 @@ import torchvision
 import torchvision.transforms as transforms
 from models.models import *
 
-def get_data(slice=5, train=True):
+def get_data(slice=1, train=True):
     full_dataset = torchvision.datasets.MNIST(root=".",
                                               train=train, 
                                               transform=transforms.ToTensor(),
